@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>재고현황 대시보드</title>
+  <style>
+    :root {
+      --bg: #f7f8f5;
+      --card: #ffffff;
+      --ink: #152426;
+      --muted: #5f6f73;
+      --line: #d9e0de;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at 10% 10%, #eaf5f2 0, var(--bg) 35%);
+      color: var(--ink);
+      font-family: "Segoe UI", "Noto Sans KR", sans-serif;
+    }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 28px 20px 40px; }
+    .section + .section { margin-top: 28px; }
+    h2 { margin: 0 0 6px; font-size: 28px; }
+    .sub { color: var(--muted); margin-bottom: 14px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      font-size: 16px;
+    }
+    th { background: #f0f6f4; }
+    .total-value { text-align: center; }
+    tr:last-child td { border-bottom: none; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="section">
+      <h2>SNCT 재고현황</h2>
+      <div class="sub">기준 파일: KRINC\SNCT.csv | 갱신 시각: 2026-02-17 11:36:42</div>
+      <table>
+        <thead>
+          <tr>
+            <th>SZ/TY</th>
+            <th>SOUND</th>
+            <th>미검사</th>
+            <th>DAMAGE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+          <td>D2</td>
+          <td>9</td>
+          <td>3</td>
+          <td>14</td>
+        </tr>
+<tr>
+          <td>D5</td>
+          <td>27</td>
+          <td>2</td>
+          <td>7</td>
+        </tr>
+<tr>
+          <td>R2</td>
+          <td>6</td>
+          <td>9</td>
+          <td>1</td>
+        </tr>
+<tr>
+          <td>R5</td>
+          <td>25</td>
+          <td>0</td>
+          <td>2</td>
+        </tr>
+<tr>
+      <td><strong>SUB-TOTAL</strong></td>
+      <td><strong>67</strong></td>
+      <td><strong>14</strong></td>
+      <td><strong>24</strong></td>
+    </tr>
+    <tr>
+      <td><strong>TOTAL</strong></td>
+      <td colspan="3" class="total-value"><strong>105</strong></td>
+    </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="section">
+      <h2>E1CT 재고현황</h2>
+      <div class="sub">기준 파일: KRINC\E1CT.csv | 갱신 시각: 2026-02-17 11:36:42</div>
+      <table>
+        <thead>
+          <tr>
+            <th>SZ/TY</th>
+            <th>SOUND</th>
+            <th>미검사</th>
+            <th>DAMAGE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+          <td>D2</td>
+          <td>48</td>
+          <td>0</td>
+          <td>5</td>
+        </tr>
+<tr>
+          <td>D5</td>
+          <td>2</td>
+          <td>0</td>
+          <td>1</td>
+        </tr>
+<tr>
+      <td><strong>SUB-TOTAL</strong></td>
+      <td><strong>50</strong></td>
+      <td><strong>0</strong></td>
+      <td><strong>6</strong></td>
+    </tr>
+    <tr>
+      <td><strong>TOTAL</strong></td>
+      <td colspan="3" class="total-value"><strong>56</strong></td>
+    </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="section">
+      <h2>ICT 재고현황</h2>
+      <div class="sub">기준 파일: KRINC\ICT.csv | 갱신 시각: 2026-02-17 11:36:42</div>
+      <table>
+        <thead>
+          <tr>
+            <th>SZ/TY</th>
+            <th>SOUND</th>
+            <th>미검사</th>
+            <th>DAMAGE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+          <td>D2</td>
+          <td>2</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+<tr>
+          <td>D5</td>
+          <td>194</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+<tr>
+      <td><strong>SUB-TOTAL</strong></td>
+      <td><strong>196</strong></td>
+      <td><strong>0</strong></td>
+      <td><strong>0</strong></td>
+    </tr>
+    <tr>
+      <td><strong>TOTAL</strong></td>
+      <td colspan="3" class="total-value"><strong>196</strong></td>
+    </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+</body>
+</html>
